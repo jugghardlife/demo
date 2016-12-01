@@ -3,8 +3,16 @@ import React from "react";
 class Home extends React.Component{
   render(){
     return(
-      <div>
-        Home
+      <div className="home-wrap">
+        <div className="home-cover">
+          <div className="home-item">
+            <h1>HI, I AM  Jugg</h1>
+            <p>web DEVELOPER</p>
+            <button className="home-btn">
+              <a href="https://jugghardlife.github.io/ball.html">ME</a>
+            </button>
+          </div>
+        </div>
       </div>
     )
   }
