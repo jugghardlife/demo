@@ -9,7 +9,7 @@ class Home extends React.Component{
             <h1>HI, I AM  Jugg</h1>
             <p>web DEVELOPER</p>
             <button className="home-btn">
-              <a href="https://jugghardlife.github.io/ball.html">ME</a>
+              <a href="https://jugghardlife.github.io/ball.html">me</a>
             </button>
           </div>
         </div>
