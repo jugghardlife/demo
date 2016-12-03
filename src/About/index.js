@@ -13,7 +13,7 @@ class About extends React.Component{
     this.state={
       data:{},
       //0 没搜索  1 后台没响应，数据未接收  2  数据接受完毕
-      wait:2
+      wait:0
     }
   }
   handleSubmit(e){
@@ -37,11 +37,10 @@ class About extends React.Component{
         <div className="git-card">
           <h2 >Seach Git Info</h2>
           <form ref="form" className="about-form" onSubmit={this.handleSubmit.bind(this)}>
-            <TextField style={{width:"57%"}} ref="gitname" id="text-field-default" hintText="Seach github" underlineStyle={{color:"#00bcd4"}}/>
-            <RaisedButton  onClick={this.handleSubmit.bind(this)} label="Primary" primary={true}  />
+            <TextField style={{width:"57%"}} ref="gitname" id="text-field-default" hintText="Seach github" underlineStyle={{color:"#246f73"}} className="about-text"/>
+            <RaisedButton  onClick={this.handleSubmit.bind(this)} label="Primary" primary={true} buttonStyle={{backgroundColor:"#246f73"}} />
           </form>
           {showGitinfo}
-
         </div>
       </div>
     )
