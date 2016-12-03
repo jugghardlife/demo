@@ -3,21 +3,23 @@ import axios from "axios";
 import marked from "marked";
 
 class Item extends React.Component{
+  constructor(){
+    super();
+
+    this.state={
+      data:""
+    }
+  }
   componentDidMount(){
-    let address=this.props.params.titlt;
-    axios.get()
+    let address=this.props.params.title;
+    axios.get(`https://raw.githubusercontent.com/jugghardlife/demo/master/data/${address}.md`)
+    .then(res=>this.setState({data:res.data}))
   }
   render(){
-    let content = this.props.params.title==0?"这是第一个页面":
-    this.props.params.title==1?"这是第二个页面":
-    this.props.params.title==2?"这是第三个页面":
-    this.props.params.title==3?"这是第四个页面":
-    "这是第N个页面";
-    console.log(this.props);
+    let content=this.state.data.length==0?"请稍等":marked(this.state.data)
     return(
       <div>
-        {content}
-
+        <div dangerouslySetInnerHTML={{__html:content}}></div>
       </div>
     )
   }
