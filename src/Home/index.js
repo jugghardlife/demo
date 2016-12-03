@@ -6,10 +6,10 @@ class Home extends React.Component{
       <div className="home-wrap">
         <div className="home-cover">
           <div className="home-item">
-            <h1>HI, I AM  Jugg</h1>
-            <p>web DEVELOPER</p>
+            <h1>HI, I AM  JUGG</h1>
+            <p>web developer</p>
             <button className="home-btn">
-              <a href="https://jugghardlife.github.io/ball.html">me</a>
+              <a href="https://jugghardlife.github.io/demo/#/">me</a>
             </button>
           </div>
         </div>
