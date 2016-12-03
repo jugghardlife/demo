@@ -12,7 +12,7 @@ class Blog extends React.Component{
     }
   }
   componentDidMount(){
-    axios.get("https://raw.githubusercontent.com/jugghardlife/demo/master/data/blogcard.json?a="+Math.random())
+    axios.get("https://raw.githubusercontent.com/jugghardlife/demo/master/data/blogcard.json?aa="+Math.random())
     .then(res=>this.setState({data:res.data,wait:false}))
   }
   render(){
