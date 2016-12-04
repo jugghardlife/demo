@@ -11,7 +11,6 @@ import Item from "./Item";
 
 class Routers extends React.Component{
   render(){
-    
     return(
       <div>
         <Router history={hashHistory}>

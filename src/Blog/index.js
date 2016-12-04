@@ -18,6 +18,7 @@ class Blog extends React.Component{
   render(){
     return(
       <div className="blog-wrap">
+      <h2 className="blog-title">笔记</h2>
       {this.state.wait?<Loading />:this.state.data.map((item,i) => <BlogCard {...item} key={i} />)}
       </div>
     )

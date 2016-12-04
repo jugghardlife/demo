@@ -4,7 +4,7 @@ class Son extends React.Component{
   render(){
     return(
       <div>
-      儿子{this.context.color}
+        儿子{this.context.color}
       </div>
     )
   }
