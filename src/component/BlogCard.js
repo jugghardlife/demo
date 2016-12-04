@@ -15,8 +15,8 @@ class BlogCard extends React.Component{
           <h3>{this.props.title}</h3>
           <p>{this.props.desc}</p>
           <RaisedButton label="更多" primary={true}
-          style={style} buttonStyle={{backgroundColor:"#246f73"}}
-          href={`#/item/${this.props.url}`}/>
+            style={style} buttonStyle={{backgroundColor:"#246f73"}}
+            href={`#/item/${this.props.url}`}/>
         </div>
       </div>
     )
